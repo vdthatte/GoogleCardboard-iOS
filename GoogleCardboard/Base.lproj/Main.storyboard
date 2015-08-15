@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GoogleCardboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2860.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-7g-6fF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="366"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2860.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NPW-nR-8Ve">
+                                <rect key="frame" x="0.0" y="366" width="600" height="234"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2j1-7g-6fF" firstAttribute="height" secondItem="NPW-nR-8Ve" secondAttribute="height" constant="132" id="26G-Ds-Vsn"/>
+                            <constraint firstItem="2j1-7g-6fF" firstAttribute="trailing" secondItem="NPW-nR-8Ve" secondAttribute="trailing" id="Gcb-DF-Xfp"/>
+                            <constraint firstItem="2j1-7g-6fF" firstAttribute="width" secondItem="NPW-nR-8Ve" secondAttribute="width" id="JUQ-Ub-OYv"/>
+                            <constraint firstItem="2j1-7g-6fF" firstAttribute="leading" secondItem="NPW-nR-8Ve" secondAttribute="leading" id="Reh-qj-Buy"/>
+                            <constraint firstAttribute="trailing" secondItem="2j1-7g-6fF" secondAttribute="trailing" id="WII-qL-bF0"/>
+                            <constraint firstItem="NPW-nR-8Ve" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="e2r-eE-lUM"/>
+                            <constraint firstItem="2j1-7g-6fF" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="iqh-cV-s8y"/>
+                            <constraint firstItem="NPW-nR-8Ve" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="346" id="lVw-dB-9a1"/>
+                            <constraint firstItem="NPW-nR-8Ve" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="sRg-tX-G1U"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2j1-7g-6fF" secondAttribute="bottom" constant="234" id="tcH-3D-6en"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--DrawVC-->
+        <scene sceneID="grN-oF-tp9">
+            <objects>
+                <viewController id="0UZ-vW-AwM" customClass="DrawVC" customModule="GoogleCardboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="04K-V6-023"/>
+                        <viewControllerLayoutGuide type="bottom" id="3qH-WQ-iti"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3nI-co-aDr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaW-kS-lKU" customClass="View" customModule="GoogleCardboard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="366"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUs-sk-Xg9" customClass="View" customModule="GoogleCardboard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="366" width="600" height="234"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FaW-kS-lKU" firstAttribute="leading" secondItem="OUs-sk-Xg9" secondAttribute="leading" id="1G4-hg-s15"/>
+                            <constraint firstItem="OUs-sk-Xg9" firstAttribute="top" secondItem="FaW-kS-lKU" secondAttribute="bottom" id="3hC-dF-ldC"/>
+                            <constraint firstItem="OUs-sk-Xg9" firstAttribute="trailing" secondItem="FaW-kS-lKU" secondAttribute="trailing" id="AHl-oj-9Nr"/>
+                            <constraint firstItem="OUs-sk-Xg9" firstAttribute="top" secondItem="3nI-co-aDr" secondAttribute="top" constant="366" id="P0U-bo-Quh"/>
+                            <constraint firstItem="OUs-sk-Xg9" firstAttribute="bottom" secondItem="3qH-WQ-iti" secondAttribute="top" id="XIm-sT-KjP"/>
+                            <constraint firstItem="FaW-kS-lKU" firstAttribute="top" secondItem="3nI-co-aDr" secondAttribute="top" id="hf9-Yj-4Dd"/>
+                            <constraint firstItem="FaW-kS-lKU" firstAttribute="leading" secondItem="3nI-co-aDr" secondAttribute="leading" id="jXc-dG-hdh"/>
+                            <constraint firstAttribute="trailing" secondItem="OUs-sk-Xg9" secondAttribute="trailing" id="ntq-Jc-wuE"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="leftBox" destination="FaW-kS-lKU" id="hej-It-l5G"/>
+                        <outlet property="rightBox" destination="OUs-sk-Xg9" id="uKV-Wc-3mw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Az0-sK-6Bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_2860.jpg" width="3264" height="2448"/>
+    </resources>
+</document>

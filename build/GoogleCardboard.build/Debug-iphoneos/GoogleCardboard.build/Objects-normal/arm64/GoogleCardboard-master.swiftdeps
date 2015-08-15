@@ -1,0 +1,7 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "94e3bdcc60ebc6c8bbdd637a9458dc81"
+inputs: 
+- "/Users/Vidyadhar/Desktop/GoogleCardboard/GoogleCardboard/View.swift"
+- "/Users/Vidyadhar/Desktop/GoogleCardboard/GoogleCardboard/ViewController.swift"
+- "/Users/Vidyadhar/Desktop/GoogleCardboard/GoogleCardboard/DrawVC.swift"
+- "/Users/Vidyadhar/Desktop/GoogleCardboard/GoogleCardboard/AppDelegate.swift"
